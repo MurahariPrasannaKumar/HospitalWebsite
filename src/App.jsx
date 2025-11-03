@@ -7,7 +7,7 @@ function NavBar() {
         <div className="flex items-center gap-3">
           <div className="h-40 w-40 rounded-full overflow-hidden">
             <img
-              src="/src/assets/logo.png"
+              src="/logo.png"
               alt="Logo"
               className="h-full w-full object-cover"
             />
