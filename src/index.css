@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Brand helpers (blue→green gradient) */
+.bg-brand{ @apply bg-gradient-to-br from-sky-100 via-cyan-100 to-lime-100; }
+.text-brand{ @apply bg-gradient-to-r from-sky-400 to-lime-400 bg-clip-text text-transparent; }
+.btn-brand{ @apply inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-lime-500 px-6 py-3 font-semibold text-white shadow-lg shadow-sky-900/20 transition hover:from-sky-600 hover:to-lime-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-400; }
