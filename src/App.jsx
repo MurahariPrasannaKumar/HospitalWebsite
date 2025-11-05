@@ -392,11 +392,11 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-  <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row md:items-center md:justify-between">
+  <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between relative">
 
-    {/* ---------- LOGO (Left) ---------- */}
-    <div className="flex justify-center md:justify-start">
-      <div className="h-50 w-50 rounded-full overflow-hidden">
+    {/* ---------- LOGO ---------- */}
+    <div className="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none">
+      <div className="h-16 w-16 rounded-full overflow-hidden">
         <img
           src="/logo.png"
           alt="Logo"
@@ -405,21 +405,19 @@ function NavBar() {
       </div>
     </div>
 
-    {/* ---------- BUTTON (Visible only on mobile) ---------- */}
-    <div className="mt-2 flex justify-center md:hidden">
+    {/* ---------- MOBILE BUTTON ---------- */}
+    <div className="ml-auto md:hidden">
       <button className="btn-brand text-sm px-4 py-2">
-        Book Appointment
+        Book
       </button>
     </div>
 
-    {/* ---------- NAV LINKS + BUTTON (Right, desktop only) ---------- */}
-    <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
+    {/* ---------- NAV LINKS + DESKTOP BUTTON ---------- */}
+    <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700 ml-auto">
       <a href="#services" className="hover:text-sky-700">Services</a>
       <a href="#about" className="hover:text-sky-700">About</a>
       <a href="#contact" className="hover:text-sky-700">Contact</a>
-      <a href="#book" className="btn-brand text-sm px-4 py-2">
-        Book Appointment
-      </a>
+      <a href="#book" className="btn-brand text-sm">Book Appointment</a>
     </nav>
 
   </div>
