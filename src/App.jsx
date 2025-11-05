@@ -502,27 +502,36 @@ function Services() {
   return (
     <section
       id="services"
-      className="bg-gradient-to-b from-sky-50 via-sky-100 to-sky-200 py-16"
+      className="bg-gradient-to-b from-[#b3dcff] via-[#a1d4ff] to-[#8ecbff] py-16"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 text-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+        {/* ---------- HEADING ---------- */}
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-[#004b8d]">
           Our Services
         </h2>
-        <p className="mt-2 text-slate-700 max-w-2xl mx-auto text-center">
-          Evidence-based treatment options tailored to your condition and
-          lifestyle.
+        <p className="mt-2 text-[#1b334d] max-w-2xl mx-auto">
+          Evidence-based treatment options tailored to your condition and lifestyle.
         </p>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {/* ---------- SERVICE CARDS ---------- */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
           {SERVICES.map((s) => (
             <div
               key={s.title}
-              className="rounded-2xl border border-slate-200/70 bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition transform"
+              className="w-full max-w-[280px] rounded-2xl bg-gradient-to-br 
+                         from-[#0072ce] to-[#00b050] p-6 shadow-lg 
+                         hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="h-11 w-11 rounded-xl bg-sky-100 text-sky-700 grid place-items-center text-xl mb-4">
+              {/* ICON */}
+              <div className="h-12 w-12 rounded-full bg-white/25 text-white 
+                              grid place-items-center text-2xl mb-4 mx-auto">
                 <span aria-hidden>{s.icon}</span>
               </div>
-              <p className="font-semibold text-slate-900">{s.title}</p>
+
+              {/* TITLE */}
+              <p className="font-semibold text-white text-lg text-center">
+                {s.title}
+              </p>
             </div>
           ))}
         </div>
