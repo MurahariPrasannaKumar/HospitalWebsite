@@ -392,47 +392,46 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative">
-        {/* ---------- LOGO ---------- */}
-        <div className="flex-1 flex justify-center md:justify-start">
-          <div
-            className="
-          h-60 w-60           /* 📱 Larger size on mobile */
-          sm:h-32 sm:w-32     /* 💻 Slightly larger on small screens */
-          md:h-36 md:w-36     /* 🖥️ Balanced on desktop */
-          rounded-full overflow-hidden transition-all duration-300
-        "
-          >
-            <img
-              src="/logo.png"
-              alt="Logo"
-              className="h-full w-full object-cover"
-            />
-          </div>
-        </div>
-
-        {/* ---------- NAV LINKS (hidden on mobile) ---------- */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
-          <a href="#services" className="hover:text-sky-700">
-            Services
-          </a>
-          <a href="#about" className="hover:text-sky-700">
-            About
-          </a>
-          <a href="#contact" className="hover:text-sky-700">
-            Contact
-          </a>
-          <a href="#book" className="btn-brand text-sm">
-            Book Appointment
-          </a>
-        </nav>
-
-        {/* ---------- MOBILE BUTTON ---------- */}
-        <div className="absolute right-4 md:hidden">
-          <button className="btn-brand text-xs px-4 py-2">Book</button>
-        </div>
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    
+    {/* ---------- LOGO ---------- */}
+    <div className="flex items-center">
+      <div className="h-12 w-12 md:h-16 md:w-16 rounded-full overflow-hidden">
+        <img
+          src="/logo.png"
+          alt="Logo"
+          className="h-full w-full object-cover"
+        />
       </div>
-    </header>
+    </div>
+
+    {/* ---------- HEADLINE ---------- */}
+    <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center mx-4">
+      Orthopaedic & Multispeciality Clinic
+    </h1>
+
+    {/* ---------- NAV LINKS (hidden on mobile) ---------- */}
+    <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
+      <a href="#services" className="hover:text-sky-700">
+        Services
+      </a>
+      <a href="#about" className="hover:text-sky-700">
+        About
+      </a>
+      <a href="#contact" className="hover:text-sky-700">
+        Contact
+      </a>
+      <a href="#book" className="btn-brand text-sm">
+        Book Appointment
+      </a>
+    </nav>
+
+    {/* ---------- MOBILE BUTTON ---------- */}
+    <div className="absolute right-4 md:hidden">
+      <button className="btn-brand text-xs px-4 py-2">Book</button>
+    </div>
+  </div>
+</header>
 
   );
 }
