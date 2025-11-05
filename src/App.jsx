@@ -392,10 +392,10 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0">
 
     {/* ---------- LOGO ---------- */}
-    <div className="flex justify-center md:justify-start mb-2 md:mb-0">
+    <div className="flex justify-center md:justify-start">
       <div className="h-50 w-50 md:h-24 md:w-24 rounded-full overflow-hidden">
         <img
           src="/logo.png"
@@ -406,7 +406,7 @@ function NavBar() {
     </div>
 
     {/* ---------- HEADLINE ---------- */}
-    <h1 className="text-center md:text-left text-lg sm:text-xl md:text-3xl font-extrabold mb-2 md:mb-0 whitespace-nowrap">
+    <h1 className="text-center md:text-left text-base sm:text-lg md:text-3xl font-extrabold whitespace-nowrap">
       Orthopaedic & Multispeciality Clinic
     </h1>
 
