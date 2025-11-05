@@ -405,21 +405,21 @@ function NavBar() {
       </div>
     </div>
 
-    {/* ---------- HEADLINE TEXT ---------- */}
+    {/* ---------- HEADLINE ---------- */}
     <div className="mt-2 text-center md:mt-0 md:text-left">
       <h1 className="text-lg md:text-2xl font-extrabold whitespace-nowrap">
         Orthopaedic & Multispeciality Clinic
       </h1>
     </div>
 
-    {/* ---------- BUTTON ---------- */}
-    <div className="mt-2 flex justify-center md:mt-0 md:justify-end">
+    {/* ---------- BUTTON (visible only on mobile) ---------- */}
+    <div className="mt-2 flex justify-center md:hidden">
       <button className="btn-brand text-sm px-4 py-2">
         Book Appointment
       </button>
     </div>
 
-    {/* ---------- NAV LINKS (hidden on mobile) ---------- */}
+    {/* ---------- NAV LINKS (desktop only) ---------- */}
     <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700 ml-6">
       <a href="#services" className="hover:text-sky-700">Services</a>
       <a href="#about" className="hover:text-sky-700">About</a>
