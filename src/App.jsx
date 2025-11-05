@@ -392,45 +392,35 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-28 md:h-24 flex items-center justify-between">
 
-    {/* ---------- LOGO ---------- */}
-    <div className="flex items-center gap-4">
-      <div className="h-35 w-35 md:h-24 md:w-24 rounded-full overflow-hidden">
+    {/* ---------- LOGO & HEADLINE for MOBILE ---------- */}
+    <div className="flex flex-col items-center md:items-start md:flex-row gap-2 md:gap-4 w-full md:w-auto">
+      <div className="h-24 w-24 md:h-24 md:w-24 lg:h-28 lg:w-28 rounded-full overflow-hidden mx-auto md:mx-0">
         <img
           src="/logo.png"
           alt="Logo"
           className="h-full w-full object-cover"
         />
       </div>
-      
-      {/* ---------- HEADLINE ---------- */}
-      <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold">
+      <h1 className="text-center md:text-left text-lg sm:text-xl md:text-3xl font-extrabold mt-2 md:mt-0">
         Orthopaedic & Multispeciality Clinic
       </h1>
     </div>
 
     {/* ---------- NAV LINKS (hidden on mobile) ---------- */}
     <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
-      <a href="#services" className="hover:text-sky-700">
-        Services
-      </a>
-      <a href="#about" className="hover:text-sky-700">
-        About
-      </a>
-      <a href="#contact" className="hover:text-sky-700">
-        Contact
-      </a>
-      <a href="#book" className="btn-brand text-sm">
-        Book Appointment
-      </a>
+      <a href="#services" className="hover:text-sky-700">Services</a>
+      <a href="#about" className="hover:text-sky-700">About</a>
+      <a href="#contact" className="hover:text-sky-700">Contact</a>
+      <a href="#book" className="btn-brand text-sm">Book Appointment</a>
     </nav>
 
     {/* ---------- MOBILE BUTTON ---------- */}
-    <div className="md:hidden">
-      <button className="btn-brand text-xs px-4 py-2">Book</button>
+    <div className="md:hidden flex items-center">
+      <button className="btn-brand text-xs px-4 py-2 ml-auto">Book</button>
     </div>
-    
+
   </div>
 </header>
 
