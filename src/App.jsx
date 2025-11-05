@@ -396,7 +396,7 @@ function NavBar() {
 
     {/* ---------- LOGO ---------- */}
     <div className="flex items-center gap-4">
-      <div className="h-30 w-30 md:h-24 md:w-24 rounded-full overflow-hidden">
+      <div className="h-35 w-35 md:h-24 md:w-24 rounded-full overflow-hidden">
         <img
           src="/logo.png"
           alt="Logo"
