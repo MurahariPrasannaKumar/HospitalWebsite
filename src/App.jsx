@@ -396,7 +396,7 @@ function NavBar() {
 
     {/* ---------- LOGO ---------- */}
     <div className="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none">
-      <div className="h-16 w-16 rounded-full overflow-hidden">
+      <div className="h-50 w-50 rounded-full overflow-hidden">
         <img
           src="/logo.png"
           alt="Logo"
