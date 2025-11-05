@@ -392,23 +392,23 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-    
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+
     {/* ---------- LOGO ---------- */}
-    <div className="flex items-center">
-      <div className="h-40 w-40 md:h-16 md:w-16 rounded-full overflow-hidden">
+    <div className="flex items-center gap-4">
+      <div className="h-20 w-20 md:h-24 md:w-24 rounded-full overflow-hidden">
         <img
           src="/logo.png"
           alt="Logo"
           className="h-full w-full object-cover"
         />
       </div>
+      
+      {/* ---------- HEADLINE ---------- */}
+      <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold">
+        Orthopaedic & Multispeciality Clinic
+      </h1>
     </div>
-
-    {/* ---------- HEADLINE ---------- */}
-    <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center mx-4">
-      Orthopaedic & Multispeciality Clinic
-    </h1>
 
     {/* ---------- NAV LINKS (hidden on mobile) ---------- */}
     <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
@@ -427,11 +427,13 @@ function NavBar() {
     </nav>
 
     {/* ---------- MOBILE BUTTON ---------- */}
-    <div className="absolute right-4 md:hidden">
+    <div className="md:hidden">
       <button className="btn-brand text-xs px-4 py-2">Book</button>
     </div>
+    
   </div>
 </header>
+
 
   );
 }
