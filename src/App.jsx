@@ -491,6 +491,7 @@ const SERVICES = [
   { title: "X-RAY", icon: "🖼️" },
   { title: "Physiotherapy", icon: "🧘" },
   { title: "PRP Injections", icon: "💉" },
+  {title: "Plasma Injections", icon: "💉"}
   { title: "Interventional Pain Management", icon: "💠" },
   { title: "No-Surgery Pain Management", icon: "✅" },
   { title: "LAB", icon: "🧪" },
