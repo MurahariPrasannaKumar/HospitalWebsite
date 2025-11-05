@@ -397,7 +397,7 @@ function NavBar() {
         <div className="flex-1 flex justify-center md:justify-start">
           <div
             className="
-          h-40 w-40           /* 📱 Larger size on mobile */
+          h-50 w-50           /* 📱 Larger size on mobile */
           sm:h-32 sm:w-32     /* 💻 Slightly larger on small screens */
           md:h-36 md:w-36     /* 🖥️ Balanced on desktop */
           rounded-full overflow-hidden transition-all duration-300
@@ -443,10 +443,10 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-slate-900">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
+            <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">
               Orthopaedic & Multispeciality Clinic
             </h1>
-            <ul className="mt-4 text-slate-700 text-lg list-disc list-inside space-y-1">
+            <ul className="mt-3 text-slate-700 text-lg list-disc list-inside space-y-1">
               <li>Comprehensive orthopaedic consultation</li>
               <li>Physiotherapy</li>
               <li>Interventional pain management</li>
