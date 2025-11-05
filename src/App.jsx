@@ -392,11 +392,11 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
 
     {/* ---------- LOGO ---------- */}
     <div className="flex justify-center md:justify-start">
-      <div className="h-50 w-50 md:h-24 md:w-24 rounded-full overflow-hidden">
+      <div className="h-16 w-16 rounded-full overflow-hidden">
         <img
           src="/logo.png"
           alt="Logo"
@@ -405,14 +405,18 @@ function NavBar() {
       </div>
     </div>
 
-    {/* ---------- HEADLINE ---------- */}
-    <h1 className="text-center md:text-left text-base sm:text-lg md:text-3xl font-extrabold whitespace-nowrap">
-      Orthopaedic & Multispeciality Clinic
-    </h1>
+    {/* ---------- HEADLINE TEXT ---------- */}
+    <div className="mt-2 text-center md:mt-0 md:text-left">
+      <h1 className="text-lg md:text-2xl font-extrabold whitespace-nowrap">
+        Orthopaedic & Multispeciality Clinic
+      </h1>
+    </div>
 
     {/* ---------- BUTTON ---------- */}
-    <div className="flex justify-center md:justify-end">
-      <button className="btn-brand text-xs px-4 py-2">Book Appointment</button>
+    <div className="mt-2 flex justify-center md:mt-0 md:justify-end">
+      <button className="btn-brand text-sm px-4 py-2">
+        Book Appointment
+      </button>
     </div>
 
     {/* ---------- NAV LINKS (hidden on mobile) ---------- */}
