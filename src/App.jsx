@@ -39,9 +39,9 @@
 //       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-slate-900">
 //         <div className="grid lg:grid-cols-2 gap-10 items-center">
 //           <div>
-//             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
-//               Orthopaedic & Multispeciality Clinic
-//             </h1>
+            // <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
+            //   Orthopaedic & Multispeciality Clinic
+            // </h1>
 //             <p className="mt-4 text-slate-700 text-lg">
 //               Comprehensive orthopaedic consultation, physiotherapy,
 //               interventional pain management, X‑Ray, PRP injections, lab and
@@ -444,9 +444,9 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-slate-900">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">
+            {/* <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">
               Orthopaedic & Multispeciality Clinic
-            </h1>
+            </h1> */}
             <ul className="mt-3 text-slate-700 text-lg list-disc list-inside space-y-1">
               <li>Comprehensive orthopaedic consultation</li>
               <li>Physiotherapy</li>
