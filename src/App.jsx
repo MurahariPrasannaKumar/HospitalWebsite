@@ -392,10 +392,10 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-28 flex items-center justify-between">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row md:items-center md:justify-between">
 
-    {/* ---------- LOGO + HEADLINE ---------- */}
-    <div className="flex-1 flex items-center justify-center gap-3 md:gap-4">
+    {/* ---------- LOGO ---------- */}
+    <div className="flex justify-center md:justify-start mb-2 md:mb-0">
       <div className="h-28 w-28 md:h-24 md:w-24 rounded-full overflow-hidden">
         <img
           src="/logo.png"
@@ -403,18 +403,20 @@ function NavBar() {
           className="h-full w-full object-cover"
         />
       </div>
-      <h1 className="whitespace-nowrap text-lg sm:text-xl md:text-3xl font-extrabold">
-        Orthopaedic & Multispeciality Clinic
-      </h1>
     </div>
 
-    {/* ---------- MOBILE BUTTON ---------- */}
-    <div className="flex items-center">
-      <button className="btn-brand text-xs px-4 py-2 ml-4">Book</button>
+    {/* ---------- HEADLINE ---------- */}
+    <h1 className="text-center md:text-left text-lg sm:text-xl md:text-3xl font-extrabold mb-2 md:mb-0 whitespace-nowrap">
+      Orthopaedic & Multispeciality Clinic
+    </h1>
+
+    {/* ---------- BUTTON ---------- */}
+    <div className="flex justify-center md:justify-end">
+      <button className="btn-brand text-xs px-4 py-2">Book Appointment</button>
     </div>
 
     {/* ---------- NAV LINKS (hidden on mobile) ---------- */}
-    <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
+    <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700 ml-6">
       <a href="#services" className="hover:text-sky-700">Services</a>
       <a href="#about" className="hover:text-sky-700">About</a>
       <a href="#contact" className="hover:text-sky-700">Contact</a>
