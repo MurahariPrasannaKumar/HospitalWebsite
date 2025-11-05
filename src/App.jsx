@@ -470,8 +470,8 @@ function Hero() {
             </div>
             <div className="mt-6 text-sm/6 text-slate-700">
               <p>
-              Meet Dr. Afief Ali
-              Dr. Afief Ali, MBBS, MS (Ortho), is a highly qualified orthopaedic specialist with a distinguished background in pain management and musculoskeletal care. With years of dedicated clinical experience, Dr. Ali combines advanced medical techniques with a compassionate, patient-focused approach to deliver lasting results. His commitment to excellence and innovation forms the cornerstone of Ortho Wellness’s philosophy — helping every patient find their path to pain-free living.
+              <b>Meet Dr. Afief Ali</b></p>
+              <p>Dr. Afief Ali, MBBS, MS (Ortho), is a highly qualified orthopaedic specialist with a distinguished background in pain management and musculoskeletal care. With years of dedicated clinical experience, Dr. Ali combines advanced medical techniques with a compassionate, patient-focused approach to deliver lasting results. His commitment to excellence and innovation forms the cornerstone of Ortho Wellness’s philosophy — helping every patient find their path to pain-free living.
               </p>
               <p className="mt-1">
                 For appointments: 080-23314189 · 96063 02160 · 72042 41439
