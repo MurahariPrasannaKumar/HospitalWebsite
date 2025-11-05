@@ -491,7 +491,7 @@ const SERVICES = [
   { title: "X-RAY", icon: "🖼️" },
   { title: "Physiotherapy", icon: "🧘" },
   { title: "PRP Injections", icon: "💉" },
-  {title: "Plasma Injections", icon: "💉"},
+  { title: "Plasma Injections", icon: "💉" },
   { title: "Interventional Pain Management", icon: "💠" },
   { title: "No-Surgery Pain Management", icon: "✅" },
   { title: "LAB", icon: "🧪" },
@@ -500,22 +500,26 @@ const SERVICES = [
 
 function Services() {
   return (
-    <section id="services" className="bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
+    <section
+      id="services"
+      className="bg-gradient-to-b from-sky-50 via-sky-100 to-sky-200 py-16"
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 text-center">
           Our Services
         </h2>
-        <p className="mt-2 text-slate-600 max-w-2xl">
+        <p className="mt-2 text-slate-700 max-w-2xl mx-auto text-center">
           Evidence-based treatment options tailored to your condition and
           lifestyle.
         </p>
+
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {SERVICES.map((s) => (
             <div
               key={s.title}
-              className="rounded-2xl border border-slate-200/70 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm hover:shadow-md transition"
+              className="rounded-2xl border border-slate-200/70 bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition transform"
             >
-              <div className="h-11 w-11 rounded-xl bg-sky-50 text-sky-700 grid place-items-center text-xl mb-4">
+              <div className="h-11 w-11 rounded-xl bg-sky-100 text-sky-700 grid place-items-center text-xl mb-4">
                 <span aria-hidden>{s.icon}</span>
               </div>
               <p className="font-semibold text-slate-900">{s.title}</p>
