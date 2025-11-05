@@ -392,11 +392,11 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between relative">
+  <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between relative">
 
     {/* ---------- LOGO ---------- */}
     <div className="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none">
-      <div className="h-50 w-50 rounded-full overflow-hidden">
+      <div className="h-16 w-16 rounded-full overflow-hidden">
         <img
           src="/logo.png"
           alt="Logo"
