@@ -397,7 +397,7 @@ function NavBar() {
         <div className="flex-1 flex justify-center md:justify-start">
           <div
             className="
-          h-50 w-50           /* 📱 Larger size on mobile */
+          h-60 w-60           /* 📱 Larger size on mobile */
           sm:h-32 sm:w-32     /* 💻 Slightly larger on small screens */
           md:h-36 md:w-36     /* 🖥️ Balanced on desktop */
           rounded-full overflow-hidden transition-all duration-300
