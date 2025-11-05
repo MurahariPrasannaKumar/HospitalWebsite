@@ -392,10 +392,10 @@ import { useEffect, useState } from "react";
 function NavBar() {
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200/60">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-32 md:h-24 flex items-center justify-between">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-28 flex items-center justify-between">
 
-    {/* ---------- CENTERED LOGO & HEADLINE ---------- */}
-    <div className="flex-1 flex flex-col items-center justify-center md:flex-row md:items-center md:justify-start">
+    {/* ---------- LOGO + HEADLINE ---------- */}
+    <div className="flex-1 flex items-center justify-center gap-3 md:gap-4">
       <div className="h-28 w-28 md:h-24 md:w-24 rounded-full overflow-hidden">
         <img
           src="/logo.png"
@@ -403,13 +403,13 @@ function NavBar() {
           className="h-full w-full object-cover"
         />
       </div>
-      <h1 className="text-center md:text-left text-xl sm:text-2xl md:text-3xl font-extrabold mt-2 md:mt-0">
+      <h1 className="whitespace-nowrap text-lg sm:text-xl md:text-3xl font-extrabold">
         Orthopaedic & Multispeciality Clinic
       </h1>
     </div>
 
     {/* ---------- MOBILE BUTTON ---------- */}
-    <div className="flex items-center md:hidden">
+    <div className="flex items-center">
       <button className="btn-brand text-xs px-4 py-2 ml-4">Book</button>
     </div>
 
